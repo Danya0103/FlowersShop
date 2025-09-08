@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WinFormsApp1 {
+
+    internal class Product {
+
+        // name, price, Product, ToString
+
+        public string Name {get; set;}
+        public decimal Price {get; set;}
+
+        // properties - властивості
+
+        public Product(string name, decimal price) {
+
+            Name = name;
+            Price = price;
+
+        }
+       
+        public override string ToString() {
+
+            return ($"{Name} - {Price} ₴");
+
+        }
+
+
+
+
+    }
+}
