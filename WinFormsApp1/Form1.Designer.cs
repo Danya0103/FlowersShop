@@ -33,79 +33,80 @@
             button2 = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
-            panel3 = new Panel();
+            panelTovar1 = new Panel();
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
-            panel4 = new Panel();
+            panelTovar2 = new Panel();
             label3 = new Label();
             label4 = new Label();
             pictureBox2 = new PictureBox();
-            panel5 = new Panel();
+            panelTovar3 = new Panel();
             label5 = new Label();
             label6 = new Label();
             pictureBox3 = new PictureBox();
-            panel8 = new Panel();
+            panelTovar5 = new Panel();
+            label9 = new Label();
+            label10 = new Label();
+            pictureBox5 = new PictureBox();
+            panelTovar6 = new Panel();
             label11 = new Label();
             label12 = new Label();
             pictureBox6 = new PictureBox();
-            panel9 = new Panel();
+            panelTovar7 = new Panel();
             label13 = new Label();
             label14 = new Label();
             pictureBox7 = new PictureBox();
-            panel10 = new Panel();
-            label15 = new Label();
-            label16 = new Label();
-            pictureBox8 = new PictureBox();
-            panel11 = new Panel();
+            panelTovar9 = new Panel();
             label17 = new Label();
             label18 = new Label();
             pictureBox9 = new PictureBox();
-            panel12 = new Panel();
+            panelTovar10 = new Panel();
             label19 = new Label();
             label20 = new Label();
             pictureBox10 = new PictureBox();
-            panel13 = new Panel();
+            panelTovar11 = new Panel();
             label21 = new Label();
             label22 = new Label();
             pictureBox11 = new PictureBox();
-            panel6 = new Panel();
+            panelTovar4 = new Panel();
             label7 = new Label();
             label8 = new Label();
             pictureBox4 = new PictureBox();
-            panel14 = new Panel();
+            panelTovar8 = new Panel();
+            label15 = new Label();
+            label16 = new Label();
+            pictureBox8 = new PictureBox();
+            panelTovar12 = new Panel();
             label23 = new Label();
             label24 = new Label();
             pictureBox12 = new PictureBox();
-            panel15 = new Panel();
-            label25 = new Label();
-            label26 = new Label();
-            pictureBox13 = new PictureBox();
+            panel3 = new Panel();
             panel1.SuspendLayout();
-            panel3.SuspendLayout();
+            panelTovar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel4.SuspendLayout();
+            panelTovar2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel5.SuspendLayout();
+            panelTovar3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel8.SuspendLayout();
+            panelTovar5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panelTovar6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panel9.SuspendLayout();
+            panelTovar7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            panel11.SuspendLayout();
+            panelTovar9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            panel12.SuspendLayout();
+            panelTovar10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            panel13.SuspendLayout();
+            panelTovar11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            panel6.SuspendLayout();
+            panelTovar4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel14.SuspendLayout();
+            panelTovar8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panelTovar12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
             // 
             // listBoxProducts
@@ -159,16 +160,18 @@
             panel2.Size = new Size(1251, 125);
             panel2.TabIndex = 4;
             // 
-            // panel3
+            // panelTovar1
             // 
-            panel3.BackColor = Color.FromArgb(103, 42, 102);
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(pictureBox1);
-            panel3.Location = new Point(231, 131);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(250, 273);
-            panel3.TabIndex = 5;
+            panelTovar1.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar1.Controls.Add(label1);
+            panelTovar1.Controls.Add(label2);
+            panelTovar1.Controls.Add(pictureBox1);
+            panelTovar1.Location = new Point(231, 131);
+            panelTovar1.Name = "panelTovar1";
+            panelTovar1.Size = new Size(250, 273);
+            panelTovar1.TabIndex = 5;
+            panelTovar1.Tag = "";
+            panelTovar1.Click += Panel_Click;
             // 
             // label1
             // 
@@ -201,18 +204,18 @@
             pictureBox1.Size = new Size(216, 195);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
-            // panel4
+            // panelTovar2
             // 
-            panel4.BackColor = Color.FromArgb(103, 42, 102);
-            panel4.Controls.Add(label3);
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(pictureBox2);
-            panel4.Location = new Point(531, 131);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(250, 273);
-            panel4.TabIndex = 6;
+            panelTovar2.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar2.Controls.Add(label3);
+            panelTovar2.Controls.Add(label4);
+            panelTovar2.Controls.Add(pictureBox2);
+            panelTovar2.Location = new Point(531, 131);
+            panelTovar2.Name = "panelTovar2";
+            panelTovar2.Size = new Size(250, 273);
+            panelTovar2.TabIndex = 6;
+            panelTovar2.Click += Panel_Click;
             // 
             // label3
             // 
@@ -244,16 +247,17 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // panel5
+            // panelTovar3
             // 
-            panel5.BackColor = Color.FromArgb(103, 42, 102);
-            panel5.Controls.Add(label5);
-            panel5.Controls.Add(label6);
-            panel5.Controls.Add(pictureBox3);
-            panel5.Location = new Point(824, 131);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(250, 273);
-            panel5.TabIndex = 7;
+            panelTovar3.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar3.Controls.Add(label5);
+            panelTovar3.Controls.Add(label6);
+            panelTovar3.Controls.Add(pictureBox3);
+            panelTovar3.Location = new Point(824, 131);
+            panelTovar3.Name = "panelTovar3";
+            panelTovar3.Size = new Size(250, 273);
+            panelTovar3.TabIndex = 7;
+            panelTovar3.Click += Panel_Click;
             // 
             // label5
             // 
@@ -286,16 +290,59 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
-            // panel8
+            // panelTovar5
             // 
-            panel8.BackColor = Color.FromArgb(103, 42, 102);
-            panel8.Controls.Add(label11);
-            panel8.Controls.Add(label12);
-            panel8.Controls.Add(pictureBox6);
-            panel8.Location = new Point(231, 418);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(250, 273);
-            panel8.TabIndex = 9;
+            panelTovar5.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar5.Controls.Add(label9);
+            panelTovar5.Controls.Add(label10);
+            panelTovar5.Controls.Add(pictureBox5);
+            panelTovar5.Location = new Point(231, 418);
+            panelTovar5.Name = "panelTovar5";
+            panelTovar5.Size = new Size(250, 273);
+            panelTovar5.TabIndex = 9;
+            panelTovar5.Click += Panel_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.ForeColor = Color.FromArgb(205, 184, 131);
+            label9.Location = new Point(18, 237);
+            label9.Name = "label9";
+            label9.Size = new Size(58, 20);
+            label9.TabIndex = 6;
+            label9.Text = "label11";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.ForeColor = Color.FromArgb(205, 184, 131);
+            label10.Location = new Point(184, 237);
+            label10.Name = "label10";
+            label10.Size = new Size(58, 20);
+            label10.TabIndex = 7;
+            label10.Text = "label12";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox5.Location = new Point(18, 18);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(216, 195);
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            // 
+            // panelTovar6
+            // 
+            panelTovar6.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar6.Controls.Add(label11);
+            panelTovar6.Controls.Add(label12);
+            panelTovar6.Controls.Add(pictureBox6);
+            panelTovar6.Location = new Point(531, 418);
+            panelTovar6.Name = "panelTovar6";
+            panelTovar6.Size = new Size(250, 273);
+            panelTovar6.TabIndex = 10;
+            panelTovar6.Click += Panel_Click;
             // 
             // label11
             // 
@@ -306,7 +353,7 @@
             label11.Name = "label11";
             label11.Size = new Size(58, 20);
             label11.TabIndex = 6;
-            label11.Text = "label11";
+            label11.Text = "label13";
             // 
             // label12
             // 
@@ -316,7 +363,7 @@
             label12.Name = "label12";
             label12.Size = new Size(58, 20);
             label12.TabIndex = 7;
-            label12.Text = "label12";
+            label12.Text = "label14";
             // 
             // pictureBox6
             // 
@@ -327,16 +374,17 @@
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
             // 
-            // panel9
+            // panelTovar7
             // 
-            panel9.BackColor = Color.FromArgb(103, 42, 102);
-            panel9.Controls.Add(label13);
-            panel9.Controls.Add(label14);
-            panel9.Controls.Add(pictureBox7);
-            panel9.Location = new Point(531, 418);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(250, 273);
-            panel9.TabIndex = 10;
+            panelTovar7.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar7.Controls.Add(label13);
+            panelTovar7.Controls.Add(label14);
+            panelTovar7.Controls.Add(pictureBox7);
+            panelTovar7.Location = new Point(824, 418);
+            panelTovar7.Name = "panelTovar7";
+            panelTovar7.Size = new Size(250, 273);
+            panelTovar7.TabIndex = 11;
+            panelTovar7.Click += Panel_Click;
             // 
             // label13
             // 
@@ -347,7 +395,7 @@
             label13.Name = "label13";
             label13.Size = new Size(58, 20);
             label13.TabIndex = 6;
-            label13.Text = "label13";
+            label13.Text = "label15";
             // 
             // label14
             // 
@@ -357,7 +405,7 @@
             label14.Name = "label14";
             label14.Size = new Size(58, 20);
             label14.TabIndex = 7;
-            label14.Text = "label14";
+            label14.Text = "label16";
             // 
             // pictureBox7
             // 
@@ -368,57 +416,17 @@
             pictureBox7.TabIndex = 0;
             pictureBox7.TabStop = false;
             // 
-            // panel10
+            // panelTovar9
             // 
-            panel10.BackColor = Color.FromArgb(103, 42, 102);
-            panel10.Controls.Add(label15);
-            panel10.Controls.Add(label16);
-            panel10.Controls.Add(pictureBox8);
-            panel10.Location = new Point(824, 418);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(250, 273);
-            panel10.TabIndex = 11;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.BackColor = Color.Transparent;
-            label15.ForeColor = Color.FromArgb(205, 184, 131);
-            label15.Location = new Point(18, 237);
-            label15.Name = "label15";
-            label15.Size = new Size(58, 20);
-            label15.TabIndex = 6;
-            label15.Text = "label15";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.ForeColor = Color.FromArgb(205, 184, 131);
-            label16.Location = new Point(184, 237);
-            label16.Name = "label16";
-            label16.Size = new Size(58, 20);
-            label16.TabIndex = 7;
-            label16.Text = "label16";
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox8.Location = new Point(18, 18);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(216, 195);
-            pictureBox8.TabIndex = 0;
-            pictureBox8.TabStop = false;
-            // 
-            // panel11
-            // 
-            panel11.BackColor = Color.FromArgb(103, 42, 102);
-            panel11.Controls.Add(label17);
-            panel11.Controls.Add(label18);
-            panel11.Controls.Add(pictureBox9);
-            panel11.Location = new Point(231, 704);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(250, 273);
-            panel11.TabIndex = 12;
+            panelTovar9.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar9.Controls.Add(label17);
+            panelTovar9.Controls.Add(label18);
+            panelTovar9.Controls.Add(pictureBox9);
+            panelTovar9.Location = new Point(231, 704);
+            panelTovar9.Name = "panelTovar9";
+            panelTovar9.Size = new Size(250, 273);
+            panelTovar9.TabIndex = 12;
+            panelTovar9.Click += Panel_Click;
             // 
             // label17
             // 
@@ -450,16 +458,17 @@
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
-            // panel12
+            // panelTovar10
             // 
-            panel12.BackColor = Color.FromArgb(103, 42, 102);
-            panel12.Controls.Add(label19);
-            panel12.Controls.Add(label20);
-            panel12.Controls.Add(pictureBox10);
-            panel12.Location = new Point(531, 704);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(250, 273);
-            panel12.TabIndex = 13;
+            panelTovar10.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar10.Controls.Add(label19);
+            panelTovar10.Controls.Add(label20);
+            panelTovar10.Controls.Add(pictureBox10);
+            panelTovar10.Location = new Point(531, 704);
+            panelTovar10.Name = "panelTovar10";
+            panelTovar10.Size = new Size(250, 273);
+            panelTovar10.TabIndex = 13;
+            panelTovar10.Click += Panel_Click;
             // 
             // label19
             // 
@@ -491,16 +500,17 @@
             pictureBox10.TabIndex = 0;
             pictureBox10.TabStop = false;
             // 
-            // panel13
+            // panelTovar11
             // 
-            panel13.BackColor = Color.FromArgb(103, 42, 102);
-            panel13.Controls.Add(label21);
-            panel13.Controls.Add(label22);
-            panel13.Controls.Add(pictureBox11);
-            panel13.Location = new Point(824, 704);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(250, 273);
-            panel13.TabIndex = 14;
+            panelTovar11.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar11.Controls.Add(label21);
+            panelTovar11.Controls.Add(label22);
+            panelTovar11.Controls.Add(pictureBox11);
+            panelTovar11.Location = new Point(824, 704);
+            panelTovar11.Name = "panelTovar11";
+            panelTovar11.Size = new Size(250, 273);
+            panelTovar11.TabIndex = 14;
+            panelTovar11.Click += Panel_Click;
             // 
             // label21
             // 
@@ -532,16 +542,17 @@
             pictureBox11.TabIndex = 0;
             pictureBox11.TabStop = false;
             // 
-            // panel6
+            // panelTovar4
             // 
-            panel6.BackColor = Color.FromArgb(103, 42, 102);
-            panel6.Controls.Add(label7);
-            panel6.Controls.Add(label8);
-            panel6.Controls.Add(pictureBox4);
-            panel6.Location = new Point(1117, 131);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(250, 273);
-            panel6.TabIndex = 15;
+            panelTovar4.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar4.Controls.Add(label7);
+            panelTovar4.Controls.Add(label8);
+            panelTovar4.Controls.Add(pictureBox4);
+            panelTovar4.Location = new Point(1117, 131);
+            panelTovar4.Name = "panelTovar4";
+            panelTovar4.Size = new Size(250, 273);
+            panelTovar4.TabIndex = 15;
+            panelTovar4.Click += Panel_Click;
             // 
             // label7
             // 
@@ -573,16 +584,59 @@
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             // 
-            // panel14
+            // panelTovar8
             // 
-            panel14.BackColor = Color.FromArgb(103, 42, 102);
-            panel14.Controls.Add(label23);
-            panel14.Controls.Add(label24);
-            panel14.Controls.Add(pictureBox12);
-            panel14.Location = new Point(1117, 418);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(250, 273);
-            panel14.TabIndex = 16;
+            panelTovar8.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar8.Controls.Add(label15);
+            panelTovar8.Controls.Add(label16);
+            panelTovar8.Controls.Add(pictureBox8);
+            panelTovar8.Location = new Point(1117, 418);
+            panelTovar8.Name = "panelTovar8";
+            panelTovar8.Size = new Size(250, 273);
+            panelTovar8.TabIndex = 16;
+            panelTovar8.Click += Panel_Click;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
+            label15.ForeColor = Color.FromArgb(205, 184, 131);
+            label15.Location = new Point(18, 237);
+            label15.Name = "label15";
+            label15.Size = new Size(58, 20);
+            label15.TabIndex = 6;
+            label15.Text = "label23";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.ForeColor = Color.FromArgb(205, 184, 131);
+            label16.Location = new Point(184, 237);
+            label16.Name = "label16";
+            label16.Size = new Size(58, 20);
+            label16.TabIndex = 7;
+            label16.Text = "label24";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox8.Location = new Point(18, 18);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(216, 195);
+            pictureBox8.TabIndex = 0;
+            pictureBox8.TabStop = false;
+            // 
+            // panelTovar12
+            // 
+            panelTovar12.BackColor = Color.FromArgb(103, 42, 102);
+            panelTovar12.Controls.Add(label23);
+            panelTovar12.Controls.Add(label24);
+            panelTovar12.Controls.Add(pictureBox12);
+            panelTovar12.Location = new Point(1117, 704);
+            panelTovar12.Name = "panelTovar12";
+            panelTovar12.Size = new Size(250, 273);
+            panelTovar12.TabIndex = 17;
+            panelTovar12.Click += Panel_Click;
             // 
             // label23
             // 
@@ -593,7 +647,7 @@
             label23.Name = "label23";
             label23.Size = new Size(58, 20);
             label23.TabIndex = 6;
-            label23.Text = "label23";
+            label23.Text = "label25";
             // 
             // label24
             // 
@@ -603,7 +657,7 @@
             label24.Name = "label24";
             label24.Size = new Size(58, 20);
             label24.TabIndex = 7;
-            label24.Text = "label24";
+            label24.Text = "label26";
             // 
             // pictureBox12
             // 
@@ -614,46 +668,12 @@
             pictureBox12.TabIndex = 0;
             pictureBox12.TabStop = false;
             // 
-            // panel15
+            // panel3
             // 
-            panel15.BackColor = Color.FromArgb(103, 42, 102);
-            panel15.Controls.Add(label25);
-            panel15.Controls.Add(label26);
-            panel15.Controls.Add(pictureBox13);
-            panel15.Location = new Point(1117, 704);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(250, 273);
-            panel15.TabIndex = 17;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.BackColor = Color.Transparent;
-            label25.ForeColor = Color.FromArgb(205, 184, 131);
-            label25.Location = new Point(18, 237);
-            label25.Name = "label25";
-            label25.Size = new Size(58, 20);
-            label25.TabIndex = 6;
-            label25.Text = "label25";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.ForeColor = Color.FromArgb(205, 184, 131);
-            label26.Location = new Point(184, 237);
-            label26.Name = "label26";
-            label26.Size = new Size(58, 20);
-            label26.TabIndex = 7;
-            label26.Text = "label26";
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox13.Location = new Point(18, 18);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(216, 195);
-            pictureBox13.TabIndex = 0;
-            pictureBox13.TabStop = false;
+            panel3.Location = new Point(516, 703);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(250, 125);
+            panel3.TabIndex = 0;
             // 
             // FlowerCityForm
             // 
@@ -661,18 +681,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(28, 34, 56);
             ClientSize = new Size(1422, 977);
-            Controls.Add(panel15);
-            Controls.Add(panel14);
-            Controls.Add(panel6);
-            Controls.Add(panel13);
-            Controls.Add(panel12);
-            Controls.Add(panel11);
-            Controls.Add(panel10);
-            Controls.Add(panel9);
-            Controls.Add(panel8);
-            Controls.Add(panel5);
-            Controls.Add(panel4);
             Controls.Add(panel3);
+            Controls.Add(panelTovar12);
+            Controls.Add(panelTovar8);
+            Controls.Add(panelTovar4);
+            Controls.Add(panelTovar11);
+            Controls.Add(panelTovar10);
+            Controls.Add(panelTovar9);
+            Controls.Add(panelTovar7);
+            Controls.Add(panelTovar6);
+            Controls.Add(panelTovar5);
+            Controls.Add(panelTovar3);
+            Controls.Add(panelTovar2);
+            Controls.Add(panelTovar1);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -681,42 +702,42 @@
             Text = "FlowerCityForm";
             Load += FlowerCityForm_Load;
             panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            panelTovar1.ResumeLayout(false);
+            panelTovar1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
+            panelTovar2.ResumeLayout(false);
+            panelTovar2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
+            panelTovar3.ResumeLayout(false);
+            panelTovar3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
+            panelTovar5.ResumeLayout(false);
+            panelTovar5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panelTovar6.ResumeLayout(false);
+            panelTovar6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panel9.ResumeLayout(false);
-            panel9.PerformLayout();
+            panelTovar7.ResumeLayout(false);
+            panelTovar7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            panel10.ResumeLayout(false);
-            panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            panel11.ResumeLayout(false);
-            panel11.PerformLayout();
+            panelTovar9.ResumeLayout(false);
+            panelTovar9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
+            panelTovar10.ResumeLayout(false);
+            panelTovar10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
+            panelTovar11.ResumeLayout(false);
+            panelTovar11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
+            panelTovar4.ResumeLayout(false);
+            panelTovar4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
+            panelTovar8.ResumeLayout(false);
+            panelTovar8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panelTovar12.ResumeLayout(false);
+            panelTovar12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ResumeLayout(false);
         }
 
@@ -727,53 +748,54 @@
         private Button button2;
         private Panel panel1;
         private Panel panel2;
-        private Panel panel3;
+        private Panel panelTovar1;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
-        private Panel panel4;
+        private Panel panelTovar2;
         private Label label3;
         private Label label4;
         private PictureBox pictureBox2;
-        private Panel panel5;
+        private Panel panelTovar3;
         private Label label5;
         private Label label6;
         private PictureBox pictureBox3;
-        private Panel panel8;
+        private Panel panelTovar5;
+        private Label label9;
+        private Label label10;
+        private PictureBox pictureBox5;
+        private Panel panelTovar6;
         private Label label11;
         private Label label12;
         private PictureBox pictureBox6;
-        private Panel panel9;
+        private Panel panelTovar7;
         private Label label13;
         private Label label14;
         private PictureBox pictureBox7;
-        private Panel panel10;
-        private Label label15;
-        private Label label16;
-        private PictureBox pictureBox8;
-        private Panel panel11;
+        private Panel panelTovar9;
         private Label label17;
         private Label label18;
         private PictureBox pictureBox9;
-        private Panel panel12;
+        private Panel panelTovar10;
         private Label label19;
         private Label label20;
         private PictureBox pictureBox10;
-        private Panel panel13;
+        private Panel panelTovar11;
         private Label label21;
         private Label label22;
         private PictureBox pictureBox11;
-        private Panel panel6;
+        private Panel panelTovar4;
         private Label label7;
         private Label label8;
         private PictureBox pictureBox4;
-        private Panel panel14;
+        private Panel panelTovar8;
+        private Label label15;
+        private Label label16;
+        private PictureBox pictureBox8;
+        private Panel panelTovar12;
         private Label label23;
         private Label label24;
         private PictureBox pictureBox12;
-        private Panel panel15;
-        private Label label25;
-        private Label label26;
-        private PictureBox pictureBox13;
+        private Panel panel3;
     }
 }

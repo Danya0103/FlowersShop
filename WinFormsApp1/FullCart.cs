@@ -8,29 +8,28 @@ namespace WinFormsApp1 {
 
     internal class FullCart {
 
-        public List<CartItem> CartObjects { get; set; }
+        public List<CartItem> CartObjects = new List<CartItem>();
 
         // TODO
         public void AddObjectsCart(Product product) {
 
             // event перевірки 
             // var - універсальний тип даних (variable) - змінна
-            var existing = CartObjects.FirstOrDefault(i => i.Product.Name == product.Name);  // 1, null 
 
-            if(existing != null) {
-
-                existing.Quantity++;
-
+            try
+            {
+                var existing = CartObjects.FirstOrDefault(i => i.Product.Name == product.Name);  // 1, null     
+                if(existing != null)
+                {
+                    existing.Quantity++;
+                }
+               
             }
-
-            else {
-
+            catch{
                 CartObjects.Add(new CartItem(product, 1));
                 //new Product("Візитка", 0)
                 CartObjects.Add(new CartItem((new Product("Візитка", 0)) , 1));
-
             }
-
             // list<string> list, list.add(251);
         }
 
