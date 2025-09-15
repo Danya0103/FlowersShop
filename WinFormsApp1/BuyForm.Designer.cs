@@ -28,122 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
+            listBoxCart = new ListBox();
+            plusButton = new Button();
+            minusButton = new Button();
+            finishButton = new Button();
+            labelBasket = new Label();
+            labalTotalPrice = new Label();
+            labelsum = new Label();
+            deleteTovarButton = new Button();
+            clearButton = new Button();
+            exitButton = new Button();
             SuspendLayout();
             // 
-            // listBox1
+            // listBoxCart
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(59, 88);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 104);
-            listBox1.TabIndex = 0;
+            listBoxCart.FormattingEnabled = true;
+            listBoxCart.Location = new Point(317, 81);
+            listBoxCart.Name = "listBoxCart";
+            listBoxCart.Size = new Size(150, 104);
+            listBoxCart.TabIndex = 0;
             // 
-            // button1
+            // plusButton
             // 
-            button1.Location = new Point(241, 101);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 1;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            plusButton.Location = new Point(273, 217);
+            plusButton.Name = "plusButton";
+            plusButton.Size = new Size(94, 29);
+            plusButton.TabIndex = 1;
+            plusButton.Text = "+";
+            plusButton.UseVisualStyleBackColor = true;
+            plusButton.Click += plusButton_Click;
             // 
-            // button2
+            // minusButton
             // 
-            button2.Location = new Point(371, 101);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 2;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            minusButton.Location = new Point(411, 217);
+            minusButton.Name = "minusButton";
+            minusButton.Size = new Size(94, 29);
+            minusButton.TabIndex = 2;
+            minusButton.Text = "-";
+            minusButton.UseVisualStyleBackColor = true;
+            minusButton.Click += minusButton_Click;
             // 
-            // button3
+            // finishButton
             // 
-            button3.Location = new Point(707, 382);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 3;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            finishButton.Location = new Point(668, 409);
+            finishButton.Name = "finishButton";
+            finishButton.Size = new Size(94, 29);
+            finishButton.TabIndex = 3;
+            finishButton.Text = "Сплатити";
+            finishButton.UseVisualStyleBackColor = true;
+            finishButton.Click += finishButton_Click;
             // 
-            // label1
+            // labelBasket
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(358, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 4;
-            label1.Text = "label1";
+            labelBasket.AutoSize = true;
+            labelBasket.Location = new Point(358, 20);
+            labelBasket.Name = "labelBasket";
+            labelBasket.Size = new Size(63, 20);
+            labelBasket.TabIndex = 4;
+            labelBasket.Text = "КОШИК";
             // 
-            // label2
+            // labalTotalPrice
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(50, 216);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 5;
-            label2.Text = "label2";
+            labalTotalPrice.AutoSize = true;
+            labalTotalPrice.Location = new Point(473, 81);
+            labalTotalPrice.Name = "labalTotalPrice";
+            labalTotalPrice.Size = new Size(103, 20);
+            labalTotalPrice.TabIndex = 5;
+            labalTotalPrice.Text = "Ітогова ціна -";
+            labalTotalPrice.Click += totalPrice_Click;
             // 
-            // label3
+            // labelsum
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(136, 216);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 6;
-            label3.Text = "label3";
+            labelsum.AutoSize = true;
+            labelsum.Location = new Point(572, 81);
+            labelsum.Name = "labelsum";
+            labelsum.Size = new Size(17, 20);
+            labelsum.TabIndex = 6;
+            labelsum.Text = "0";
+            labelsum.Click += label3_Click;
             // 
-            // button4
+            // deleteTovarButton
             // 
-            button4.Location = new Point(497, 101);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 7;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            deleteTovarButton.Location = new Point(411, 285);
+            deleteTovarButton.Name = "deleteTovarButton";
+            deleteTovarButton.Size = new Size(128, 29);
+            deleteTovarButton.TabIndex = 7;
+            deleteTovarButton.Text = "Видалити товар";
+            deleteTovarButton.UseVisualStyleBackColor = true;
+            deleteTovarButton.Click += deleteTovarButton_Click;
             // 
-            // button5
+            // clearButton
             // 
-            button5.Location = new Point(244, 192);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 29);
-            button5.TabIndex = 8;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            clearButton.Location = new Point(273, 285);
+            clearButton.Name = "clearButton";
+            clearButton.Size = new Size(94, 29);
+            clearButton.TabIndex = 8;
+            clearButton.Text = "Очистити кошик";
+            clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clear_Click;
             // 
-            // button6
+            // exitButton
             // 
-            button6.Location = new Point(707, 11);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 29);
-            button6.TabIndex = 9;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            exitButton.Location = new Point(690, 11);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(111, 29);
+            exitButton.TabIndex = 9;
+            exitButton.Text = "Повернутись";
+            exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
             // 
             // BuyForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.CadetBlue;
             ClientSize = new Size(800, 450);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(listBox1);
+            Controls.Add(exitButton);
+            Controls.Add(clearButton);
+            Controls.Add(deleteTovarButton);
+            Controls.Add(labelsum);
+            Controls.Add(labalTotalPrice);
+            Controls.Add(labelBasket);
+            Controls.Add(finishButton);
+            Controls.Add(minusButton);
+            Controls.Add(plusButton);
+            Controls.Add(listBoxCart);
             FormBorderStyle = FormBorderStyle.None;
             Name = "BuyForm";
             Text = "BuyForm";
@@ -153,15 +162,15 @@
 
         #endregion
 
-        private ListBox listBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
+        private ListBox listBoxCart;
+        private Button plusButton;
+        private Button minusButton;
+        private Button finishButton;
+        private Label labelBasket;
+        private Label labalTotalPrice;
+        private Label labelsum;
+        private Button deleteTovarButton;
+        private Button clearButton;
+        private Button exitButton;
     }
 }

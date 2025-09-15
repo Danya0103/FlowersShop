@@ -12,7 +12,7 @@ namespace WinFormsApp1 {
 
         }
 
-        private FullCart fullCart = new FullCart();
+        public FullCart fullCart = new FullCart();
 
         private void Panel_Click(object sender, EventArgs e)
         {
@@ -21,7 +21,7 @@ namespace WinFormsApp1 {
                 fullCart.AddObjectsCart(product);
                 listBoxProducts.Items.Add(product);
                 MessageBox.Show($"{product.Name} - додано в кошик");
-                   
+
             }
         }
 
@@ -116,6 +116,10 @@ namespace WinFormsApp1 {
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BuyForm buyForm = new BuyForm(fullCart);
+            buyForm.ShowDialog();
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1
 {
-    internal class CartItem
+    public class CartItem
     {
         // name, price, Product, ToString
 

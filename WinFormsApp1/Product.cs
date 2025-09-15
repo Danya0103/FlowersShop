@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1 {
 
-    internal class Product {
+    public class Product {
 
         // name, price, Product, ToString
 

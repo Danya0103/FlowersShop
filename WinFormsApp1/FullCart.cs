@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1 {
 
-    internal class FullCart {
+    public class FullCart {
 
         public List<CartItem> CartObjects = new List<CartItem>();
 

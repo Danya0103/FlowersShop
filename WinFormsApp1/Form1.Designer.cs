@@ -30,7 +30,6 @@
         {
             listBoxProducts = new ListBox();
             button1 = new Button();
-            button2 = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
             panelTovar1 = new Panel();
@@ -81,7 +80,6 @@
             label23 = new Label();
             label24 = new Label();
             pictureBox12 = new PictureBox();
-            panel3 = new Panel();
             panel1.SuspendLayout();
             panelTovar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -125,24 +123,11 @@
             button1.TabIndex = 1;
             button1.Text = "Перегляд кошику";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Transparent;
-            button2.FlatAppearance.BorderColor = Color.FromArgb(255, 255, 128);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(38, 644);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 2;
-            button2.Text = "Сплатити";
-            button2.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(217, 247, 255);
-            panel1.Controls.Add(button2);
             panel1.Controls.Add(listBoxProducts);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
@@ -668,20 +653,12 @@
             pictureBox12.TabIndex = 0;
             pictureBox12.TabStop = false;
             // 
-            // panel3
-            // 
-            panel3.Location = new Point(516, 703);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(250, 125);
-            panel3.TabIndex = 0;
-            // 
             // FlowerCityForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(28, 34, 56);
             ClientSize = new Size(1422, 977);
-            Controls.Add(panel3);
             Controls.Add(panelTovar12);
             Controls.Add(panelTovar8);
             Controls.Add(panelTovar4);
@@ -745,7 +722,6 @@
 
         private ListBox listBoxProducts;
         private Button button1;
-        private Button button2;
         private Panel panel1;
         private Panel panel2;
         private Panel panelTovar1;
@@ -796,6 +772,5 @@
         private Label label23;
         private Label label24;
         private PictureBox pictureBox12;
-        private Panel panel3;
     }
 }
